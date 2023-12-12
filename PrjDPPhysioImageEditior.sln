@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjDPPhysioImageEditior", "PrjDPPhysioImageEditior\PrjDPPhysioImageEditior.csproj", "{F37B1C8B-E8E7-4DD4-A3B8-62D4291C177B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Public.Library.ErrorHandeling", "ErrorLogging\Public.Library.ErrorHandeling\Public.Library.ErrorHandeling.csproj", "{B04DC26C-713A-4921-B0EA-85C2A87B419D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F37B1C8B-E8E7-4DD4-A3B8-62D4291C177B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F37B1C8B-E8E7-4DD4-A3B8-62D4291C177B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F37B1C8B-E8E7-4DD4-A3B8-62D4291C177B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F37B1C8B-E8E7-4DD4-A3B8-62D4291C177B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04DC26C-713A-4921-B0EA-85C2A87B419D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04DC26C-713A-4921-B0EA-85C2A87B419D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04DC26C-713A-4921-B0EA-85C2A87B419D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04DC26C-713A-4921-B0EA-85C2A87B419D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB6D40B5-5C91-4057-80AA-C8DDDFB96855}
+	EndGlobalSection
+EndGlobal

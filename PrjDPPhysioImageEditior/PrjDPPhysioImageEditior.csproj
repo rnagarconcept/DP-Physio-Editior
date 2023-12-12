@@ -1,0 +1,244 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F37B1C8B-E8E7-4DD4-A3B8-62D4291C177B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrjDPPhysioImageEditior</RootNamespace>
+    <AssemblyName>PrjDPPhysioImageEditior</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frmAnnotation.aspx" />
+    <Content Include="demo\demo.css" />
+    <Content Include="demo\img\facebook-icon.png" />
+    <Content Include="demo\img\favicon.ico" />
+    <Content Include="demo\img\forkme_right_darkblue.png" />
+    <Content Include="demo\img\github-icon.png" />
+    <Content Include="demo\img\googleplus-icon.png" />
+    <Content Include="demo\img\linkedin-icon.png" />
+    <Content Include="demo\img\rss-icon.png" />
+    <Content Include="demo\img\stumbleupon-icon.png" />
+    <Content Include="demo\img\twitter-icon.png" />
+    <Content Include="demo\img\websanova-logo-small-full-black.png" />
+    <Content Include="demo\img\youtube-icon.png" />
+    <Content Include="gruntfile.js" />
+    <Content Include="images\bodydig.png" />
+    <Content Include="images\moment.png" />
+    <Content Include="images\none.png" />
+    <Content Include="lib\jquery.1.10.2.min.js" />
+    <Content Include="lib\jquery.ui.core.1.10.3.min.js" />
+    <Content Include="lib\jquery.ui.draggable.1.10.3.min.js" />
+    <Content Include="lib\jquery.ui.mouse.1.10.3.min.js" />
+    <Content Include="lib\jquery.ui.widget.1.10.3.min.js" />
+    <Content Include="lib\wColorPicker.min.css" />
+    <Content Include="lib\wColorPicker.min.js" />
+    <Content Include="plugins\file\img\icons-menu-main-file.png" />
+    <Content Include="plugins\file\src\wPaint.menu.main.file.js" />
+    <Content Include="plugins\file\wPaint.menu.main.file.min.js" />
+    <Content Include="plugins\main\img\cursor-bucket.png" />
+    <Content Include="plugins\main\img\cursor-crosshair.png" />
+    <Content Include="plugins\main\img\cursor-dropper.png" />
+    <Content Include="plugins\main\img\cursor-eraser1.png" />
+    <Content Include="plugins\main\img\cursor-eraser10.png" />
+    <Content Include="plugins\main\img\cursor-eraser2.png" />
+    <Content Include="plugins\main\img\cursor-eraser3.png" />
+    <Content Include="plugins\main\img\cursor-eraser4.png" />
+    <Content Include="plugins\main\img\cursor-eraser5.png" />
+    <Content Include="plugins\main\img\cursor-eraser6.png" />
+    <Content Include="plugins\main\img\cursor-eraser7.png" />
+    <Content Include="plugins\main\img\cursor-eraser8.png" />
+    <Content Include="plugins\main\img\cursor-eraser9.png" />
+    <Content Include="plugins\main\img\cursor-pencil.png" />
+    <Content Include="plugins\main\img\icon-group-arrow.png" />
+    <Content Include="plugins\main\img\icons-menu-main.png" />
+    <Content Include="plugins\main\src\fillArea.min.js" />
+    <Content Include="plugins\main\src\wPaint.menu.main.js" />
+    <Content Include="plugins\main\wPaint.menu.main.min.js" />
+    <Content Include="plugins\shapes\img\icons-menu-main-shapes.png" />
+    <Content Include="plugins\shapes\src\shapes.min.js" />
+    <Content Include="plugins\shapes\src\wPaint.menu.main.shapes.js" />
+    <Content Include="plugins\shapes\wPaint.menu.main.shapes.min.js" />
+    <Content Include="plugins\text\img\icons-menu-text.png" />
+    <Content Include="plugins\text\src\wPaint.menu.text.js" />
+    <Content Include="plugins\text\wPaint.menu.text.min.js" />
+    <Content Include="src\wPaint.css" />
+    <Content Include="src\wPaint.js" />
+    <Content Include="src\wPaint.utils.js" />
+    <Content Include="test\fullscreen.html" />
+    <Content Include="test\upload.php" />
+    <Content Include="Web.config" />
+    <Content Include="wPaint.min.css" />
+    <Content Include="wPaint.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnnotation.aspx.cs">
+      <DependentUpon>frmAnnotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAnnotation.aspx.designer.cs">
+      <DependentUpon>frmAnnotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\webRefConceptWebDataAccess\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\mixins.styl" />
+    <Content Include="package.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\webRefConceptWebDataAccess\ConceptWebDataAccess.wsdl" />
+    <Content Include="Web References\webRefConceptWebDataAccess\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\webRefConceptWebDataAccess\TaskOfBoolean.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="wPaint.jquery.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="test\uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ErrorLogging\Public.Library.ErrorHandeling\Public.Library.ErrorHandeling.csproj">
+      <Project>{b04dc26c-713a-4921-b0ea-85c2a87b419d}</Project>
+      <Name>Public.Library.ErrorHandeling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Users\AMAN\Desktop\ConceptWebDataAccess.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\webRefConceptWebDataAccess\</RelPath>
+      <UpdateFromURL>C:\Users\AMAN\Desktop\ConceptWebDataAccess.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PrjDPPhysioImageEditior_webRefConceptWebDataAccess_ConceptWebDataAccess</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57718</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57718/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
